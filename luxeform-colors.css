@@ -1,0 +1,98 @@
+/* ==========================================
+   LuxeForm Navigation Bar - Gradient Background
+   ========================================== */
+
+/* Main Navbar Container */
+.navbar {
+    background: linear-gradient(to right, #4285F4, #34A853) !important;
+    /* Gradient background from blue to green */
+    padding: 0.5rem 0 !important;
+    /* Reduce navbar height */
+    min-height: 50px !important;
+}
+
+/* Navigation links text color */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    /* White text color for contrast with gradient */
+    padding: 0.25rem 0.5rem !important;
+    /* Reduce link padding */
+    font-size: 0.9rem !important;
+    /* Slightly smaller font */
+    font-weight: normal !important;
+    /* Normal font weight (remove bold) */
+    transition: all 0.3s ease !important;
+    /* Smooth transition for hover effects */
+}
+
+/* Navigation links hover effect */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    /* Keep white color on hover */
+    transform: scale(1.05) !important;
+    /* Slightly enlarge on hover */
+}
+
+/* Brand/Logo styling */
+.navbar-brand {
+    padding: 0.25rem 0 !important;
+    /* Reduce brand padding */
+    font-size: 1.4rem !important;
+    /* Smaller brand font */
+    color: #ffffff !important;
+    /* White text color for LuxeForm brand */
+    font-weight: bold !important;
+    /* Bold font weight for brand */
+    margin-left: 90px !important;
+    /* Move brand 90px to the right */
+}
+
+.navbar-brand img {
+    width: 35px !important;
+    height: 35px !important;
+    /* Smaller logo */
+}
+
+/* Badge styling for Wishlist and Cart */
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+    color: #ffffff !important;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.35rem;
+    min-width: 1.1rem;
+    height: 1.1rem;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50%;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin-left: 0.25rem !important;
+    display: inline-block !important;
+}
+
+/* Position nav items relatively for badge positioning */
+.navbar-nav .nav-link {
+    position: relative !important;
+}
+
+/* ==========================================
+   Navigation Layout & Alignment
+   ========================================== */
+
+/* Move navigation items to the right side */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 4rem;
+    /* Push navigation items much further to the right */
+    gap: 1rem !important;
+    /* Reduce spacing between navigation items */
+    margin-right: calc(4rem - 48px + 48px) !important;
+    /* Move items additional 24px to the left (total 48px) */
+}
+
+/* Ensure proper spacing and alignment for collapsed navbar */
+.navbar-collapse {
+    justify-content: flex-end;
+    /* Align content to the right */
+}
